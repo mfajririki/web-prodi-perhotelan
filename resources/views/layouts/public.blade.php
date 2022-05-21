@@ -109,7 +109,7 @@
                               Kurikulum
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="{{ route('kurikulum_konten') }}">Kurikulum Pengelolaan Perhotelan</a></li>
+                              <li><a class="dropdown-item" href="{{ route('kurikulum_konten') }}">Kurikulum Sistem Informasi</a></li>
                               <li><a class="dropdown-item" href="{{ route('bimbingan_akademik') }}">Bimbingan Akademik</a></li>                          
                             </ul>
                           </li>
@@ -157,7 +157,7 @@
                     <div class="carousel-inner">
                         @if ($sliders == [])
                             <div class="carousel-item active">
-                                <img src="images/slider.png" class="d-block w-100" alt="slider" style="height: 275px;">
+                                <img src={{ asset("images/slider.png") }} class="d-block w-100" alt="slider" style="height: 275px;">
                             </div>
                         @else
                             @foreach ($sliders as $no => $slider)
@@ -218,7 +218,7 @@
                                 <div class="menu-campus-life-container">
                                     <ul id="menu-campus-life" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
                                         <li class="menu-item"><a href="https://www.binadarma.ac.id/" target="_blank">Portal Web UBD</a></li>
-                                        <li class="menu-item"><a href="https://sisfo.binadarma.ac.id/" target="_blank">Pengelolaan Perhotelan Akademik</a></li>
+                                        <li class="menu-item"><a href="https://sisfo.binadarma.ac.id/" target="_blank">Sistem Informasi Akademik</a></li>
                                         <li class="menu-item"><a href="https://elearning.binadarma.ac.id/" target="_blank">E-Learning</a></li>                                                                                
                                     </ul>
                                 </div>
